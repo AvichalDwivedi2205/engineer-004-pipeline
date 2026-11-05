@@ -68,7 +68,7 @@ flowchart LR
 
 - **Volume:** 50M events/day [Assumed] (brief) averages 579/s, with a diurnal peak of 1,736/s [Assumed] (3x). The conservative 10x of that peak is 17,361/s [Estimated]. With 1.25 headroom [Assumed] at 1,000 records/s per shard [Benchmarked], that needs 22 shards.
 - **Bandwidth:** at 1 KB/event [Assumed] (the fixture averages 230 B [Observed]), the spike is 17.8 MB/s [Estimated]. That is 0.8 MB/s per shard against Kinesis's 1 MB/s [Benchmarked].
-- **Gate CPU:** ~47K records/s on one M4 core [Observed] (`out/drill_clean.json`, varies by run); the sheet budgets 0.2 ms/record [Estimated], 5K/s per shard against 789/s.
+- **Gate CPU:** ~50K records/s on one M4 core [Observed] (`out/drill_clean.json`, varies by run); the sheet budgets 0.2 ms/record [Estimated], 5K/s per shard against 789/s.
 
 | `tools/cost_sheet.py` [Estimated] | Normal month | Black Friday month (72 h at spike) | Stress: all hours at spike |
 |---|---:|---:|---:|

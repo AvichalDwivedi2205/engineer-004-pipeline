@@ -38,7 +38,7 @@ Spike headroom [Estimated]: normal peak needs 3 shards; 10x of the daily average
 | bytes_per_event | 1,024 | [Assumed] | fixture mean is 230 B [Observed]; production events carry UA/URL/context |
 | spike_hours_bf_month | 72 | [Assumed] | Black Friday to Cyber Monday at full spike |
 | collector_rps_per_vcpu | 2,000 | [Assumed] | Node/Go collector, JSON parse + PutRecords; Phase 0 benchmark replaces this |
-| gate_ms_per_record | 0.2 | [Estimated] | gate CPU is ~0.021 ms/record (~47K records/s in the committed run, varies by run) on one Apple M4 core [Observed, out/drill_clean.json]; x3 for a Lambda vCPU, the rest is Redis/ClickHouse I/O |
+| gate_ms_per_record | 0.2 | [Estimated] | gate CPU is ~0.020 ms/record (~50K records/s in the committed run, varies by run) on one Apple M4 core [Observed, out/drill_clean.json]; x3 for a Lambda vCPU, the rest is Redis/ClickHouse I/O |
 | ch_units_normal | 8 | [Assumed] | 2 replicas x 32 GiB; Phase 1 load test replaces this |
 | ch_units_spike | 24 | [Assumed] | 2 replicas x 96 GiB during spike hours |
 | ch_hot_days | 90 | [Assumed] | hot retention in ClickHouse; lake keeps 13 months |
