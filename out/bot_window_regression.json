@@ -1,0 +1,16 @@
+{
+  "seed": 7,
+  "events": 200000,
+  "client_time_window_first_version": {
+    "clean_events": 195877,
+    "clean_events_flagged_as_bot": 268,
+    "bot_events": 2395,
+    "bot_events_flagged_in_stream": 1795
+  },
+  "server_time_window_current": {
+    "clean_events": 195877,
+    "clean_events_flagged_as_bot": 0,
+    "bot_events": 2395,
+    "bot_events_flagged_in_stream": 1795
+  }
+}

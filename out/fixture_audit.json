@@ -1,0 +1,309 @@
+{
+  "fixture": "event_sample.jsonl",
+  "sha256": "1aeb24b415009e89fcf8acb5a178410faf216dc17b16920d9849ecc8bbb24235",
+  "records_in": 25,
+  "buckets": {
+    "accepted": 21,
+    "duplicate": 1,
+    "quarantined": 1,
+    "control": 1,
+    "dead_letter": 1
+  },
+  "invariant_balanced": true,
+  "findings": {
+    "bot_rate": [
+      [
+        "evt-0015",
+        16
+      ]
+    ],
+    "bot_referrer": [
+      [
+        "evt-0012",
+        13
+      ],
+      [
+        "evt-0013",
+        14
+      ],
+      [
+        "evt-0014",
+        15
+      ],
+      [
+        "evt-0015",
+        16
+      ]
+    ],
+    "client_clock_ahead": [
+      [
+        "evt-0005",
+        6
+      ],
+      [
+        "evt-0006",
+        7
+      ],
+      [
+        "evt-0016",
+        17
+      ]
+    ],
+    "identity_candidate": [
+      [
+        "evt-0016",
+        17
+      ],
+      [
+        "evt-0024",
+        25
+      ]
+    ],
+    "legacy_schema_mapped": [
+      [
+        "evt-0009",
+        10
+      ]
+    ],
+    "no_state_update": [
+      [
+        "evt-0005",
+        6
+      ],
+      [
+        "evt-0006",
+        7
+      ],
+      [
+        "evt-0009",
+        10
+      ],
+      [
+        "evt-0016",
+        17
+      ]
+    ],
+    "no_trigger": [
+      [
+        "evt-0005",
+        6
+      ],
+      [
+        "evt-0006",
+        7
+      ],
+      [
+        "evt-0009",
+        10
+      ],
+      [
+        "evt-0016",
+        17
+      ]
+    ],
+    "partition_time_unverified": [
+      [
+        "evt-0009",
+        10
+      ]
+    ],
+    "pii_redacted": [
+      [
+        "evt-0007",
+        8
+      ]
+    ],
+    "privacy_request_pending_verification": [
+      [
+        "evt-0017",
+        18
+      ]
+    ],
+    "received_at_missing": [
+      [
+        "evt-0009",
+        10
+      ]
+    ],
+    "same_id_same_content": [
+      [
+        "evt-0002",
+        5
+      ]
+    ],
+    "tenant_unresolved": [
+      [
+        "evt-0011",
+        12
+      ]
+    ],
+    "unparseable: JSONDecodeError": [
+      [
+        "evt-0020",
+        21
+      ]
+    ]
+  },
+  "dsr_tickets": [
+    {
+      "tenant_id": "t-088",
+      "user_id": "u-1077",
+      "anonymous_id": "anon-77a",
+      "request": "delete_all_data",
+      "regulation": "GDPR",
+      "event_id": "evt-0017",
+      "status": "pending_tenant_verification",
+      "source": "sdk_unauthenticated"
+    }
+  ],
+  "identity_links": [
+    {
+      "tenant_id": "t-042",
+      "anonymous_id": "anon-9f2",
+      "user_id": "u-5511",
+      "via": "identify",
+      "event_id": "evt-0003"
+    },
+    {
+      "tenant_id": "t-017",
+      "anonymous_id": "anon-c81",
+      "user_id": "u-2209",
+      "via": "identify",
+      "event_id": "evt-0008"
+    },
+    {
+      "tenant_id": "t-042",
+      "anonymous_id": "anon-3d0",
+      "user_id": "u-7304",
+      "via": "identify",
+      "event_id": "evt-0022"
+    }
+  ],
+  "identity_candidates": [
+    {
+      "tenant_id": "t-017",
+      "anonymous_id": "anon-52d",
+      "user_id": "u-8842",
+      "via": "custom",
+      "event_id": "evt-0016"
+    },
+    {
+      "tenant_id": "t-017",
+      "anonymous_id": "anon-52d",
+      "user_id": "u-8842",
+      "via": "page_view",
+      "event_id": "evt-0024"
+    }
+  ],
+  "bot_visitors": [
+    "t-042/anon-8fc"
+  ],
+  "arrival_order_breaks": [
+    {
+      "line": 5,
+      "event_id": "evt-0002",
+      "received_at": "2026-06-15T14:02:27.442Z",
+      "previous_line": 4
+    }
+  ],
+  "duplicates": [
+    {
+      "event_id": "evt-0002",
+      "line": 5,
+      "retry_gap_ms": 7428
+    }
+  ],
+  "transit_ms_sane_clients": {
+    "n": 17,
+    "min": 119,
+    "median": 163,
+    "max": 206
+  },
+  "skewed_clients": [
+    {
+      "event_id": "evt-0005",
+      "client_minus_server_ms": 47190,
+      "client_ts": "2026-06-15T14:05:00.120Z",
+      "received_at": "2026-06-15T14:04:12.930000+00:00"
+    },
+    {
+      "event_id": "evt-0006",
+      "client_minus_server_ms": 3900000,
+      "client_ts": "2026-06-15T15:11:03.552Z",
+      "received_at": "2026-06-15T14:06:03.552000+00:00"
+    },
+    {
+      "event_id": "evt-0016",
+      "client_minus_server_ms": 31535999788,
+      "client_ts": "2027-06-15T14:11:27.310Z",
+      "received_at": "2026-06-15T14:11:27.522000+00:00"
+    }
+  ],
+  "client_reported_aggregates": [
+    {
+      "event_id": "evt-0019",
+      "claims": "viewed_pricing.count_today=3",
+      "person": "u-5511",
+      "raw_page_views_in_sample": [
+        "evt-0001"
+      ]
+    }
+  ],
+  "pricing_views_by_tenant": {
+    "naive_exact_type_match": {
+      "t-042": [
+        "evt-0001",
+        "evt-0012"
+      ],
+      "t-017": [
+        "evt-0021"
+      ]
+    },
+    "after_gate": {
+      "t-042": [
+        "evt-0001",
+        "evt-0009"
+      ],
+      "t-017": [
+        "evt-0021"
+      ]
+    },
+    "rollup_view_filter": {
+      "t-042": [
+        "evt-0001",
+        "evt-0009"
+      ],
+      "t-017": [
+        "evt-0021"
+      ]
+    }
+  },
+  "deletion_scope": [
+    {
+      "ticket_event_id": "evt-0017",
+      "user_id": "u-1077",
+      "events_reachable_by_user_id": [],
+      "events_reachable_only_via_request_anon_id": [
+        "evt-0006"
+      ],
+      "anon_link_confirmed_by_identify": false
+    }
+  ],
+  "pii_linked_after_stitch": [
+    {
+      "event_id": "evt-0007",
+      "fields": [
+        "contact_email",
+        "phone"
+      ],
+      "now_attributed_to": "u-7304"
+    }
+  ],
+  "event_id_gaps": [],
+  "tenant_mix": {
+    "t-042": 12,
+    "t-017": 7,
+    "t-088": 4,
+    "None": 1
+  }
+}

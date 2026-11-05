@@ -1,0 +1,25 @@
+Bug found by tools/spike_drill.py (seed 7, 200,000 events), fixed in ingest_gate/gate.py.
+Reproduce both sides on identical inputs:  python3 tools/bot_window_regression.py --events 200000 --seed 7
+  first version (client-time window):  268 of 195,877 clean events flagged as bot
+  current (server-time window):          0 of 195,877
+(out/bot_window_regression.json; the first version lives on as ClientTimeWindowGate in that tool.)
+
+Cause: the bot-rate window was keyed on client time. One event whose client clock was a
+year ahead entered the visitor's window and never aged out, so the next 3 page views from
+that (human) visitor tripped the 4-in-1-second rule.
+
+--- a/ingest_gate/gate.py   (pre-fix)
++++ b/ingest_gate/gate.py
+@@ def _bot_check(self, ev, client: datetime, flags):
+         if ev["type"] == "page_view":
+-            window = self._pv_times[visitor]
+-            window.append(client)
+-            while window and ms_between(client, window[0]) > BOT_BURST_WINDOW_MS:
+-                window.popleft()
++            now = parse_ts(ev.get("received_at")) or client
++            window = self._pv_times[visitor]
++            window.append(now)
++            while window and abs(ms_between(now, window[0])) > BOT_BURST_WINDOW_MS:
++                window.popleft()
+
+Regression test: tests/test_gate.py::test_skewed_client_clock_does_not_poison_bot_window

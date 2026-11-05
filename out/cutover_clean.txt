@@ -1,0 +1,12 @@
+tenant-hours: 3,295   tenants: 500   edge records: 1,013,739
+A1        completeness           ok
+A2        data quality           ok
+A2-review low-volume review      131 tenant(s): t-118, t-120, t-122, t-123, t-126, t-129, t-131, t-132
+              t-118 window: 1 of 973 quarantined or dead-lettered, under 1,000 records; needs a recorded review
+              t-120 window: 1 of 962 quarantined or dead-lettered, under 1,000 records; needs a recorded review
+              t-122 window: 3 of 971 quarantined or dead-lettered, under 1,000 records; needs a recorded review
+A3        denominator vs legacy  ok
+A4        freshness              not measured: needs the staging canary p95 for this window
+legacy gap for context: 22,001 records (2.17%); legacy also stored 10,156 retries as real events
+tenants with no tenant-level problem: 369 of 500
+VERDICT: HOLD

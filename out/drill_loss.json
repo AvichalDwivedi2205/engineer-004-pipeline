@@ -1,0 +1,83 @@
+{
+  "tag": "loss",
+  "seed": 11,
+  "dedupe_commit": "after-sink",
+  "rates_assumed": {
+    "retry_duplicate": 0.01,
+    "malformed": 0.001,
+    "legacy_schema": 0.02,
+    "null_tenant": 0.0005,
+    "clock_ahead": 0.005,
+    "pii_in_props": 0.002,
+    "id_conflict": 0.0001,
+    "privacy_requests_total": 50,
+    "bot_bursts_total": 400,
+    "late_retry": 0.001,
+    "sink_error_after_partial_write": 0.02,
+    "crash_after_commit": 0.01,
+    "legacy_loss_normal_hour": 0.002,
+    "legacy_loss_spike_hour": 0.03
+  },
+  "unique_events_requested": 1000000,
+  "records_delivered_to_collector": 1013739,
+  "records_reaching_gate": 1013525,
+  "collector_incarnations": 9,
+  "faults": {
+    "lake_failed_after_other_sink_wrote": 31,
+    "crash_after_commit_before_checkpoint": 24,
+    "clickhouse_failed_after_other_sink_wrote": 15
+  },
+  "gate_attempts": 1048525,
+  "buckets_committed": {
+    "accepted": 1001741,
+    "dead_letter": 1015,
+    "duplicate": 10153,
+    "quarantined": 566,
+    "control": 50
+  },
+  "reasons": {
+    "unparseable: JSONDecodeError": 1054,
+    "same_id_same_content": 23872,
+    "tenant_unresolved": 490,
+    "event_id_conflict": 96,
+    "privacy_request_pending_verification": 51
+  },
+  "checks": {
+    "every_record_has_one_committed_bucket": true,
+    "clickhouse_events_missing": 0,
+    "clickhouse_unexpected_events": 0,
+    "clickhouse_duplicate_rows_before_dedupe": 15339,
+    "lake_events_missing": 0,
+    "lake_unexpected_events": 0,
+    "lake_duplicate_rows_before_dedupe": 7926,
+    "counter_double_increments": 0,
+    "counter_coverage": "995799/1000719",
+    "raw_pii_reaching_storage": 0,
+    "detection": {
+      "legacy_mapped": "12134/12134",
+      "clock_ahead_to_server_time": "4920/4920",
+      "bot_flagged_in_stream_referrer": "1199/1199",
+      "bot_flagged_in_stream_rate_only": "609/1200",
+      "bot_excluded_after_visitor_rollup": "2399/2399",
+      "pii_redacted": "2018/2018",
+      "late_retry_kept_out_of_counters": "1022/1022"
+    },
+    "false_positive_flags_on_clean_events": 0,
+    "clean_events": 979346,
+    "loss_detector": {
+      "records_lost_injected": 214,
+      "records_missing_by_seq_gap": 214,
+      "records_seen_after_last_high_water_mark": 23,
+      "lost_records_after_last_mark_ground_truth": 0
+    }
+  },
+  "throughput": {
+    "gate_records_processed": 1048525,
+    "gate_seconds": 17.58,
+    "records_per_second_single_thread": 59649,
+    "generation_seconds": 9.78,
+    "python": "3.12.15",
+    "machine": "macOS-26.3-arm64-arm-64bit",
+    "cpu": "Apple M4"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "tag": "dedupe_before_sink",
+  "seed": 11,
+  "dedupe_commit": "before-sink",
+  "rates_assumed": {
+    "retry_duplicate": 0.01,
+    "malformed": 0.001,
+    "legacy_schema": 0.02,
+    "null_tenant": 0.0005,
+    "clock_ahead": 0.005,
+    "pii_in_props": 0.002,
+    "id_conflict": 0.0001,
+    "privacy_requests_total": 50,
+    "bot_bursts_total": 400,
+    "late_retry": 0.001,
+    "sink_error_after_partial_write": 0.02,
+    "crash_after_commit": 0.01,
+    "legacy_loss_normal_hour": 0.002,
+    "legacy_loss_spike_hour": 0.03
+  },
+  "unique_events_requested": 1000000,
+  "records_delivered_to_collector": 1013739,
+  "records_reaching_gate": 1013739,
+  "collector_incarnations": 9,
+  "faults": {
+    "lake_failed_after_other_sink_wrote": 31,
+    "crash_after_commit_before_checkpoint": 24,
+    "clickhouse_failed_after_other_sink_wrote": 15
+  },
+  "gate_attempts": 1048739,
+  "buckets_committed": {
+    "accepted": 982188,
+    "dead_letter": 1016,
+    "duplicate": 29921,
+    "quarantined": 566,
+    "control": 48
+  },
+  "reasons": {
+    "unparseable: JSONDecodeError": 1049,
+    "same_id_same_content": 45104,
+    "tenant_unresolved": 490,
+    "event_id_conflict": 95,
+    "privacy_request_pending_verification": 50
+  },
+  "checks": {
+    "every_record_has_one_committed_bucket": true,
+    "clickhouse_events_missing": 6416,
+    "clickhouse_unexpected_events": 0,
+    "clickhouse_duplicate_rows_before_dedupe": 1015,
+    "lake_events_missing": 13321,
+    "lake_unexpected_events": 0,
+    "lake_duplicate_rows_before_dedupe": 1003,
+    "counter_double_increments": 0,
+    "counter_coverage": "976339/1000929",
+    "raw_pii_reaching_storage": 0,
+    "detection": {
+      "legacy_mapped": "11904/11904",
+      "clock_ahead_to_server_time": "4832/4832",
+      "bot_flagged_in_stream_referrer": "1169/1169",
+      "bot_flagged_in_stream_rate_only": "585/1173",
+      "bot_excluded_after_visitor_rollup": "2342/2342",
+      "pii_redacted": "1966/1966",
+      "late_retry_kept_out_of_counters": "1017/1017"
+    },
+    "false_positive_flags_on_clean_events": 0,
+    "clean_events": 960223,
+    "loss_detector": {
+      "records_lost_injected": 0,
+      "records_missing_by_seq_gap": 0,
+      "records_seen_after_last_high_water_mark": 23,
+      "lost_records_after_last_mark_ground_truth": 0
+    }
+  },
+  "throughput": {
+    "gate_records_processed": 1048739,
+    "gate_seconds": 15.51,
+    "records_per_second_single_thread": 67596,
+    "generation_seconds": 9.77,
+    "python": "3.12.15",
+    "machine": "macOS-26.3-arm64-arm-64bit",
+    "cpu": "Apple M4"
+  }
+}

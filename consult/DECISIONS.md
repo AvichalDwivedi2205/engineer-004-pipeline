@@ -1,0 +1,64 @@
+# Design decisions where the consulted model disagreed
+
+The process: I formed a position from the fixture and the brief first. Then I asked GPT-6.1 (Codex CLI, xhigh reasoning) for an independent design without showing it mine (round 1). After the draft existed, GPT-6.1 attacked it with the repo in hand and could run the code (round 2). After that, Grok 4.7 (Cursor CLI, xhigh, ask mode, sandboxed) reviewed the near-final repo (round 3). It worked in an isolated copy without `consult/`, so it could not anchor on the earlier critiques, and could not edit or run anything. The prompts and all answers are in `consult/raw/`.
+
+## Round 1: independent design vs mine
+
+| Topic | My draft | GPT-6.1 independent design | Decision and why |
+|---|---|---|---|
+| Stream processing | Python Lambda on the Kinesis event source mapping; state in Valkey | Managed Flink (PyFlink), with checkpointed dedupe and windows | **Kept Lambda.** The team writes Python and Node. The only state we need is per-visitor counters and a dedupe window, with no event-time joins. Flink adds Java tooling and KPU billing. GPT-6.1 itself listed "Flink fits the team" as its decision most likely to be wrong, and conceded the point in round 2. Revisit when sessionization or joins are in scope. |
+| Dashboard store | ClickHouse Cloud (managed, PrivateLink) | Managed OpenSearch with 3-day hot retention | **Kept ClickHouse.** Its round-1 objection was to self-managed ClickHouse's ops burden, which the managed service removes. Dashboards need 90-day per-tenant aggregates and distinct-visitor counts, and that is columnar work. GPT-6.1 conceded this in round 2 but found my table definition wrong (below). |
+| What "10x spike" means | 10x the normal peak hour (17,361/s) | 10x the daily average (5,787/s) | **Kept the conservative reading.** Holding Kinesis for the larger number costs $358 a month more (`out/cost_sheet.md`). Round 2 rightly pointed out that the "whole month at 10x" cost column is therefore 30x normal volume; it is now labelled that way. |
+| Replay after deletion | Not covered in the draft | Deleted subjects must not reappear after replay | **Adopted.** The gate checks a tombstone list on every path, including replay from the raw archive and the S3 spill. |
+| Late events and personalization | Not covered | Late corrections update state but must not fire triggers | **Adopted, then tightened** after the drill found a hole (round 2 row on dedupe TTL). |
+| Rollback triggers | Error rate, latency, throttling, unexplained loss | Also cross-tenant disclosure, a failed deletion test, and a cost forecast over $50K | **Adopted all three.** |
+| PII in properties | HMAC at the gate | Redact, plus route necessary contact data to restricted storage | **Partly adopted.** Default stays HMAC. A per-tenant opt-in restricted store is listed as post-MVP, since evt-0007 is a quote request the customer may legitimately need. |
+
+## Round 2: critique of the draft, and what changed
+
+| Critique (paraphrased; full text in `consult/raw/gpt61_round2.md`) | Verdict | Change |
+|---|---|---|
+| ReplacingMergeTree dedupes on ORDER BY, so "keyed on (tenant_id, event_id), ordered by (tenant_id, received_at)" is incoherent; MVs never retract | **Correct** | `schema/clickhouse.sql`: ORDER BY (tenant_id, event_id), FINAL for exact reads, nightly REPLACE PARTITION repair of the rollup (`schema/jobs.sql`). Not executed: no ClickHouse binary here; `make ddl` runs it where one exists. |
+| Dedupe marks an event before the sinks succeed, so a sink failure turns a redelivery into a "duplicate" that is never stored; the drill never exercised this | **Correct, and worse than stated** | Gate now commits dedupe keys per batch, after the sinks ack. The drill injects partial sink failures, post-commit crashes and restarts. On the same 1M events the first ordering loses events in both sinks and the new one loses none (`out/drill_dedupe_before_sink.json` vs `out/drill_clean.json`). |
+| Firehose to Iceberg takes one JSON object per record and has no 5 KB rounding; Direct PUT default is 5 MiB/s | **Correct** | Lake gets one event per record at the Iceberg sku ($0.075/GB) with AppendOnly so it scales past 5 MiB/s; the raw archive (S3 destination) keeps batched records. My "5 KB trap" paragraph was wrong for the lake and is gone. |
+| Cutover gate passes offsetting errors, A3 doesn't gate, A4 has no input, small tenants bypass A2 | **Correct** | Every tenant-hour must balance exactly; A3 is now a denominator check that gates; missing A4 is HOLD; low-volume tenants with bad records need a recorded review. Each counterexample is a test. The clean drill run now ends in HOLD (A4 unmeasured), which is the honest result. |
+| ALB logs can't be the denominator; detector reads the generator's full counters | **Correct** | Edge counts come from collector receipt manifests and per-incarnation high-water marks persisted once a second. The drill's detector reads only those marks, and a node crash leaves a tail it reports as unverifiable. |
+| Cost scenarios: storage didn't grow with volume; egress, RDS storage, network missing | **Correct** | Retained storage scales with each scenario's volume; added VPC endpoints, RDS storage, export egress; staging priced off the normal month. |
+| "Inside GDPR's one-month window" is not a basis for keeping raw copies; quarantine and arrays kept PII; HMAC is pseudonymisation | **Correct** | Copy-by-copy deletion table in ANSWER.md §5 with completion evidence per copy; redaction runs before quarantine and covers arrays (tested). |
+| evt-0009 partitioned on client time despite "server time always"; evt-0016 creates an authoritative identity edge | **Correct** | Missing received_at partitions on Kinesis arrival time; non-identify events carrying both ids become unmerged candidates (both tested). |
+| Latency budget mixes an n=17 median with assumptions | **Correct** | Every component is now labelled [Assumed] except Lambda's 1 s polling. |
+| Round-1 design's own common-input-before-branching migration is stronger than teeing legacy | **Partly** | Kept the tee for Phase 1 (no edge change while the team learns the new path), but A3 now catches a lossy tee: legacy rows beyond the manifest count HOLD. |
+| Stress questions (a) $10K/month, (b) own AWS account, (c) EU residency, (d) 72-hour deletion including backups | **Useful** | Answered in `docs/changed_constraints.md` (moved out of ANSWER.md to keep it to 4 pages), with GPT-6.1's figures re-derived where my sheet supports them. |
+
+## Round 3: Grok 4.7 review of the near-final repo
+
+Each claim was checked against the code, the schema or the docs before I accepted or rejected it.
+
+| Critique (paraphrased; full text in `consult/raw/grok47_round3.md`) | Verdict | Change |
+|---|---|---|
+| Row policies fail open: a user that no policy names reads every row, so a missing tenant policy exposes everyone | **Correct.** ClickHouse docs: users without a matching policy see every row; `users_without_row_policies_can_read_rows` is on by default. My `schema/access.sql` comment said the opposite. | A permissive `USING 0 TO ALL` policy per table, so every user has at least one policy, plus a `pipeline` role with `USING 1` for the gate and jobs. **Rejected Grok's specific fix:** a *restrictive* `USING 0` is ANDed with every other policy and would hide all rows from everyone. |
+| `page_views_1m_mv` groups on `path` and filters `is_bot`, but the gate never sets either; both stay inside properties | **Correct** | `ingest_gate.gate.clickhouse_row` lifts `path`, `referrer` and `is_bot` out and stringifies properties. A test checks that the rollup's filter picks evt-0001 and evt-0009 for t-042 and skips the scanner; the audit reports the same count (`rollup_view_filter`). |
+| `schema/check.sql` calls its row evt-0002 but inserts a page view of /features; the fixture row is a click on /pricing | **Correct** | check.sql now uses the fixture's values, through the same mapping, and marks the two synthetic rows. |
+| FINAL can't collapse copies in different partitions; a late retry across a month boundary is counted twice, and the repair used FINAL | **Correct.** The schema comment admitted the gap but claimed the repair covered it, which it didn't. | Exact reads and the nightly repair use `ORDER BY version DESC LIMIT 1 BY tenant_id, event_id` over every received_at that can hold the day's copies. check.sql includes a synthetic cross-month retry for `make ddl`. |
+| "1.5% of ClickHouse rows are copies that FINAL removes [Observed]": the drill's ClickHouse is a dict | **Correct** | Reworded: 1.5% of rows written to the stand-in are copies the store must collapse. The schema stays Tier 0. |
+| "$485/mo" is the 22-vs-3 shard gap, not the price of avoiding on-demand | **Correct** | Priced on-demand from the Price List (added sku 59DG9NNVUBGN3C5M, extended retention): $244 vs $583 in a normal month and $866 vs $644 in a Black Friday month. The sheet shows both; ANSWER.md quotes them. |
+| Lambda ESM `BatchSize` defaults to 100, so a once-a-second poll can't clear 789 records/s per shard | **Correct about the config gap.** AWS docs also say Lambda "keeps processing batches until the function catches up with the stream", so 100 records/s per shard is a floor, not a cap. | Batch size 1,000 is now stated. The ≤1 s poll keeps its [Benchmarked] label, since it is the documented poll rate, and it is named as such. |
+| One Valkey script can't touch keys in several cluster slots (`CROSSSLOT`) | **Correct** | One script per tenant, with keys hash-tagged `{tenant}`. **Rejected dropping atomicity** (SET NX plus nightly counters): the drill's no-double-increment result depends on the commit and the counter moving together. The largest drill tenant is ~3.3K events/s at spike, well within one shard [Assumed]. |
+| A Firehose 200 is not an Iceberg commit; error-prefix records arrive after the batch checkpointed, so they can't abort it | **Correct** | A reconciler re-drives the error prefix, and a daily per-tenant lake-vs-ClickHouse count catches drift. "What breaks it" was reworded to match. |
+| Firehose keeps only the first level of nested JSON; `properties` is nested | **Correct** (quoted in my own evidence file) | The lake gets the same flat row as ClickHouse, with properties as a JSON string. |
+| The Direct PUT quota of 5 MiB/s is separate from `AppendOnly` | **Correct** | A quota raise for both Firehose streams is filed in Phase 0. |
+| PutRecords returns 200 with `FailedRecordCount`; and "acks only once Kinesis holds the record" contradicts the S3 spill | **Correct** | The lede says "a durable write: Kinesis, or an S3 spill"; §4 says the failed records are retried before the 2xx. |
+| evt-0009 never moves counters, even when Kinesis arrival time exists | **Partly.** Live legacy traffic always gets a collector stamp, so it wasn't blocked. A record that lost its stamp was, needlessly. | Kinesis arrival time now stands in for a missing stamp (it is server time), so such a record is policed like any other (tested). |
+| "Viewed pricing 3x" is never defined | **Correct** | One-sentence rule in §2: three non-bot views of the tenant's pricing paths by one identify-linked person in 7 days [Assumed]; legacy `pageview` counts, client counters don't. |
+| evt-0004's `"referrer": null` is an unclassified type change | **Correct, minor** | Mapped to an empty string, tested, and listed in the fixture table. |
+| The test doesn't lock "the referrer rule catches all four" | **Correct** | The scanner test now requires `bot_referrer` on evt-0012 to evt-0015. |
+| ~500 per-tenant KMS keys are not on the cost sheet | **Correct** | I dropped per-tenant KMS keys from the design rather than price a feature nobody asked for; they are listed under "later". Exports keep per-tenant prefixes. |
+| Existing Redis consumers and webhooks are unnamed | **Correct** | Phase 0 now lists every reader of legacy Postgres and Redis. I don't know who they are. |
+| `consult/` is cited but missing | **Rejected** | It was left out of Grok's copy on purpose (see above). |
+| Voice: the §7 trade-off sentence and the backpressure sentence read as generic | **Accepted in part** | Both rewritten with concrete thresholds; the thresholds are [Assumed]. |
+| Cut the latency stack, the OpenSearch, Flink-price, MSK and API Gateway asides | **Partly** | Kept a one-line latency estimate (the brief asks for real time). Cut the OpenSearch, Flink-price and MSK lines to make room for the fixes. |
+
+## Found by my own runs, not by the reviewers
+
+- The first bot-rate rule windowed on client time (268 false bot flags in 195,877 clean events; `tools/bot_window_regression.py`).
+- The first no-state-update rule used client-reported age, so a late retry from a client whose clock ran ahead still incremented a personalization counter a second time. Only events with a trusted client clock now update live counters and triggers.

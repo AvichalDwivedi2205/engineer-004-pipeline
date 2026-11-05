@@ -1,0 +1,2518 @@
+{
+ "skus": {
+  "2ZXSJSRZJDEZG2UP": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data ingested",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Event-by-Event Processing",
+    "usagetype": "USE1-BilledBytes",
+    "operation": "PutRecord",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose",
+    "tickettype": "1"
+   },
+   "on_demand": [
+    {
+     "rateCode": "2ZXSJSRZJDEZG2UP.JRTCKXETXF.HK3AFRJD7J",
+     "description": "Tier 1 $0.029 per GB of data ingested",
+     "beginRange": "0",
+     "endRange": "512000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0290000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "2ZXSJSRZJDEZG2UP.JRTCKXETXF.UWBZ2JUKT9",
+     "description": "Tier 2 $0.025 per GB of data ingested",
+     "beginRange": "512000",
+     "endRange": "2048000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0250000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "2ZXSJSRZJDEZG2UP.JRTCKXETXF.PERGK9UASF",
+     "description": "Tier 3 $0.020 per GB of data ingested",
+     "beginRange": "2048000",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0200000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "37CUWUT8GSNQEPUV": {
+   "offer_file": "AWSELB.json",
+   "publication_date": "2026-09-11T12:45:44Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSELB/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AWSELB",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "ELB:Balancing",
+    "groupDescription": "LoadBalancer hourly usage by Application Load Balancer",
+    "usagetype": "LoadBalancerUsage",
+    "operation": "LoadBalancing:Application",
+    "regionCode": "us-east-1",
+    "servicename": "Elastic Load Balancing"
+   },
+   "on_demand": [
+    {
+     "rateCode": "37CUWUT8GSNQEPUV.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.0225 per Application LoadBalancer-hour (or partial hour)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.0225000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "3WWQAXWQEYF3K28K": {
+   "offer_file": "AmazonMSK.json",
+   "publication_date": "2026-10-14T17:00:39Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonMSK/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonMSK",
+    "description": "Per-GB data ingressed",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Serverless",
+    "usagetype": "USE1-KafkaServerless-In-Bytes",
+    "operation": "Serverless",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Managed Streaming for Apache Kafka"
+   },
+   "on_demand": [
+    {
+     "rateCode": "3WWQAXWQEYF3K28K.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.10 per GB  data in for serverless cluster in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.1000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "4B6YDGGHJ68E9SNF": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data ingested or delivered to Apache Iceberg Tables",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Event-by-Event Processing",
+    "usagetype": "USE1-IcebergTablesBilledBytes",
+    "operation": "PutRecord",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose"
+   },
+   "on_demand": [
+    {
+     "rateCode": "4B6YDGGHJ68E9SNF.JRTCKXETXF.PKDEJ9N4K8",
+     "description": "Tier 1 $0.075 per GB of data ingested ",
+     "beginRange": "0",
+     "endRange": "256000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0750000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "4B6YDGGHJ68E9SNF.JRTCKXETXF.V2M4DY9FUH",
+     "description": "Tier 2 $0.064 per GB of data ingested ",
+     "beginRange": "256000",
+     "endRange": "1024000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0640000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "4B6YDGGHJ68E9SNF.JRTCKXETXF.W36PUWTAP8",
+     "description": "Tier 3 $0.053 per GB of data ingested",
+     "beginRange": "1024000",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0530000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "4JC5TDVR4MFWANVE": {
+   "offer_file": "AmazonEC2.json",
+   "publication_date": "2026-10-28T18:03:52Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonEC2",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "r7g.xlarge",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "4",
+    "physicalProcessor": "AWS Graviton3 Processor",
+    "clockSpeed": "2.5 GHz",
+    "memory": "32 GiB",
+    "storage": "EBS only",
+    "networkPerformance": "Up to 12500 Megabit",
+    "processorArchitecture": "64-bit",
+    "tenancy": "Shared",
+    "operatingSystem": "Linux",
+    "licenseModel": "No License required",
+    "usagetype": "BoxUsage:r7g.xlarge",
+    "operation": "RunInstances",
+    "availabilityzone": "NA",
+    "capacitystatus": "Used",
+    "classicnetworkingsupport": "false",
+    "dedicatedEbsThroughput": "Up to 10000 Mbps",
+    "dedicatedEbsThroughputDescription": "1250 Mbps",
+    "ecu": "NA",
+    "enhancedNetworkingSupported": "Yes",
+    "gpuMemory": "NA",
+    "instanceFamilyCategory": "Memory Optimized",
+    "intelAvxAvailable": "No",
+    "intelAvx2Available": "No",
+    "intelTurboAvailable": "No",
+    "marketoption": "OnDemand",
+    "normalizationSizeFactor": "8",
+    "preInstalledSw": "NA",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Compute Cloud",
+    "vpcnetworkingsupport": "true"
+   },
+   "on_demand": [
+    {
+     "rateCode": "4JC5TDVR4MFWANVE.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.2142 per On Demand Linux r7g.xlarge Instance Hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.2142000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "4V6WBV2SGNWG4M9M": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Enhanced fan-out GB of data retrieved",
+    "groupDescription": "Number of GBs of data retrieved by consumers using enhanced fan-out",
+    "usagetype": "ReadBytes",
+    "operation": "EnhancedFanoutDataRetrieval",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "4V6WBV2SGNWG4M9M.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.013 per GB of data retrieved by consumers using enhanced fan-out",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0130000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "4W55HJV9VC4VWG8P": {
+   "offer_file": "AmazonEC2.json",
+   "publication_date": "2026-10-28T18:03:52Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonEC2",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "r7g.2xlarge",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "8",
+    "physicalProcessor": "AWS Graviton3 Processor",
+    "clockSpeed": "2.5 GHz",
+    "memory": "64 GiB",
+    "storage": "EBS only",
+    "networkPerformance": "Up to 15 Gigabit",
+    "processorArchitecture": "64-bit",
+    "tenancy": "Shared",
+    "operatingSystem": "Linux",
+    "licenseModel": "No License required",
+    "usagetype": "BoxUsage:r7g.2xlarge",
+    "operation": "RunInstances",
+    "availabilityzone": "NA",
+    "capacitystatus": "Used",
+    "classicnetworkingsupport": "false",
+    "dedicatedEbsThroughput": "Up to 10000 Mbps",
+    "dedicatedEbsThroughputDescription": "2500 Mbps",
+    "ecu": "NA",
+    "enhancedNetworkingSupported": "Yes",
+    "gpuMemory": "NA",
+    "instanceFamilyCategory": "Memory Optimized",
+    "intelAvxAvailable": "No",
+    "intelAvx2Available": "No",
+    "intelTurboAvailable": "No",
+    "marketoption": "OnDemand",
+    "normalizationSizeFactor": "16",
+    "preInstalledSw": "NA",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Compute Cloud",
+    "vpcnetworkingsupport": "true"
+   },
+   "on_demand": [
+    {
+     "rateCode": "4W55HJV9VC4VWG8P.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.4284 per On Demand Linux r7g.2xlarge Instance Hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.4284000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "59DG9NNVUBGN3C5M": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "per byte hour data stored within 1-7 days",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand",
+    "usagetype": "OnDemand-ExtendedRetention-ByteHrs",
+    "operation": "OnDemandExtendedRetentionByteHrs",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "59DG9NNVUBGN3C5M.JRTCKXETXF.6YS6EN2CT7",
+     "description": "0.10 per GB-month for retention within 1-7 days",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-month",
+     "pricePerUnit": {
+      "USD": "0.1000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "5KE89N55PB48GC9E": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "Per GB of data retrieved by consumers using enhanced fan-out",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand",
+    "usagetype": "OnDemand-BilledOutgoingEFOBytes",
+    "operation": "OnDemandEFODataRetrieval",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "5KE89N55PB48GC9E.JRTCKXETXF.6YS6EN2CT7",
+     "description": "0.05 per GB of data read using EFO Consumer",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0500000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "5WR47E348MKS6PJ3": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data ingested or delivered to Apache Iceberg Tables from Kinesis Streams",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Batch Processing",
+    "usagetype": "USE1-IcebergTablesBilledBytes",
+    "operation": "GetKinesisRecords",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose"
+   },
+   "on_demand": [
+    {
+     "rateCode": "5WR47E348MKS6PJ3.JRTCKXETXF.PKDEJ9N4K8",
+     "description": "Tier 1 $0.045 per GB of data ingested ",
+     "beginRange": "0",
+     "endRange": "256000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0450000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "5WR47E348MKS6PJ3.JRTCKXETXF.V2M4DY9FUH",
+     "description": "Tier 2 $0.038 per GB of data ingested ",
+     "beginRange": "256000",
+     "endRange": "1024000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0380000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "5WR47E348MKS6PJ3.JRTCKXETXF.W36PUWTAP8",
+     "description": "Tier 3 $0.032 per GB of data ingested",
+     "beginRange": "1024000",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0320000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "65XV7TSGW9ZJSRYZ": {
+   "offer_file": "AmazonMSK.json",
+   "publication_date": "2026-10-14T17:00:39Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonMSK/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonMSK",
+    "description": "Storage-hours",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Storage",
+    "usagetype": "USE1-Kafka.Storage.GP2",
+    "operation": "RunVolume",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Managed Streaming for Apache Kafka",
+    "storageFamily": "GP2"
+   },
+   "on_demand": [
+    {
+     "rateCode": "65XV7TSGW9ZJSRYZ.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.10 per GB-Mo for storage in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-Mo",
+     "pricePerUnit": {
+      "USD": "0.1000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "672ZXFMAWFMXFU89": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per object dynamically partitioned",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Dynamic Partitioning",
+    "usagetype": "USE1-S3DeliveryObjectCount",
+    "operation": "DynamicPartitioning",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose",
+    "tickettype": "1"
+   },
+   "on_demand": [
+    {
+     "rateCode": "672ZXFMAWFMXFU89.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.005 per thousand dynamically partitioned objects",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Objects",
+     "pricePerUnit": {
+      "USD": "0.0000050000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "72SBSFWPMDTH8S3J": {
+   "offer_file": "AWSLambda.json",
+   "publication_date": "2026-10-22T18:39:59Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AWSLambda",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "AWS-Lambda-Duration-ARM",
+    "groupDescription": "Invocation duration weighted by memory assigned to function, measured in GB-s for ARM",
+    "usagetype": "Lambda-GB-Second-ARM",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "AWS Lambda"
+   },
+   "on_demand": [
+    {
+     "rateCode": "72SBSFWPMDTH8S3J.JRTCKXETXF.6NBUNBXSC3",
+     "description": "AWS Lambda - Total Compute for ARM - US East (Northern Virginia)-Tier-1",
+     "beginRange": "0",
+     "endRange": "7500000000",
+     "unit": "Lambda-GB-Second",
+     "pricePerUnit": {
+      "USD": "0.0000133334"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "72SBSFWPMDTH8S3J.JRTCKXETXF.6JGAYSJBNY",
+     "description": "AWS Lambda - Total Compute for ARM - US East (Northern Virginia)-Tier-2",
+     "beginRange": "7500000000",
+     "endRange": "18750000000",
+     "unit": "Lambda-GB-Second",
+     "pricePerUnit": {
+      "USD": "0.0000120001"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "72SBSFWPMDTH8S3J.JRTCKXETXF.AVR3V96UTF",
+     "description": "AWS Lambda - Total Compute for ARM - US East (Northern Virginia)-Tier-3",
+     "beginRange": "18750000000",
+     "endRange": "Inf",
+     "unit": "Lambda-GB-Second",
+     "pricePerUnit": {
+      "USD": "0.0000106667"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "7EYXASUNJEVDHMAB": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per JQ processing hour",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Dynamic Partitioning",
+    "usagetype": "USE1-MetadataProcessingDuration",
+    "operation": "DynamicPartitioning",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose",
+    "tickettype": "1"
+   },
+   "on_demand": [
+    {
+     "rateCode": "7EYXASUNJEVDHMAB.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.070 per JQ processing hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.0700000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "7FBBNJEEPEC6TFHX": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data ingested or delivered from Kinesis Streams",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Batch Processing",
+    "usagetype": "USE1-KDS-no-rounding-BilledBytes",
+    "operation": "GetKinesisRecords",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose"
+   },
+   "on_demand": [
+    {
+     "rateCode": "7FBBNJEEPEC6TFHX.JRTCKXETXF.6YS6EN2CT7",
+     "description": "Per GB of data ingested or delivered",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0740000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "7Q58NR58VQEASA4W": {
+   "offer_file": "AmazonEC2.json",
+   "publication_date": "2026-10-28T18:03:52Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonEC2",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "provisioned": "Yes",
+    "group": "EBS IOPS",
+    "groupDescription": "IOPS",
+    "usagetype": "EBS:VolumeP-IOPS.gp3",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Compute Cloud",
+    "volumeApiName": "gp3"
+   },
+   "on_demand": [
+    {
+     "rateCode": "7Q58NR58VQEASA4W.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.005 per provisioned IOPS-month of gp3 - US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "IOPS-Mo",
+     "pricePerUnit": {
+      "USD": "0.0050000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "7RXVY4V5SG8NQC38": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Provisioned shard hour",
+    "groupDescription": "Number of standard shard hours",
+    "usagetype": "Storage-ShardHour",
+    "operation": "shardHourStorage",
+    "maximumExtendedStorage": "7 days",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis",
+    "standardStorageRetentionIncluded": "1 day"
+   },
+   "on_demand": [
+    {
+     "rateCode": "7RXVY4V5SG8NQC38.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.015 per provisioned shard-hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "ShardHour",
+     "pricePerUnit": {
+      "USD": "0.0150000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "7WFFXKTD43Q8CUSV": {
+   "offer_file": "AmazonRDS.json",
+   "publication_date": "2026-10-29T07:06:35Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonRDS/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonRDS",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "db.r7g.large",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "2",
+    "physicalProcessor": "AWS Graviton3",
+    "memory": "16 GiB",
+    "storage": "EBS Only",
+    "networkPerformance": "Up to 12.5 Gigabit",
+    "processorArchitecture": "64-bit",
+    "engineCode": "14",
+    "databaseEngine": "PostgreSQL",
+    "licenseModel": "No license required",
+    "deploymentOption": "Single-AZ",
+    "usagetype": "InstanceUsage:db.r7g.large",
+    "operation": "CreateDBInstance:0014",
+    "instanceTypeFamily": "R7G",
+    "normalizationSizeFactor": "4",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Relational Database Service",
+    "unbundledLicensing": "FALSE"
+   },
+   "on_demand": [
+    {
+     "rateCode": "7WFFXKTD43Q8CUSV.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$ 0.239 per RDS db.r7g.large Single-AZ instance hour (or partial hour) running PostgreSQL",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.2390000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "826E7FJQWVKN3CBH": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "Per GB of data ingested",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand",
+    "usagetype": "OnDemand-BilledIncomingBytes",
+    "operation": "OnDemandDataIngested",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "826E7FJQWVKN3CBH.JRTCKXETXF.6YS6EN2CT7",
+     "description": "0.08 per GB of data written",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0800000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "8CESGAFWKAJ98PME": {
+   "offer_file": "AmazonECS.json",
+   "publication_date": "2026-10-19T22:43:17Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonECS/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonECS",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "tenancy": "Shared",
+    "usagetype": "USE1-Fargate-vCPU-Hours:perCPU",
+    "operation": "",
+    "cputype": "perCPU",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Container Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "8CESGAFWKAJ98PME.JRTCKXETXF.6YS6EN2CT7",
+     "description": "AWS Fargate - vCPU - US East (N.Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.0404800000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "96K55R2PV3ZZZ3AM": {
+   "offer_file": "AmazonCloudWatch.json",
+   "publication_date": "2026-10-07T11:55:40Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudWatch/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonCloudWatch",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Ingested Logs",
+    "groupDescription": "Existing system, application, and custom log files",
+    "usagetype": "DataProcessing-Bytes",
+    "operation": "PutLogEvents",
+    "logsDestination": "Amazon CloudWatch Logs",
+    "regionCode": "us-east-1",
+    "servicename": "AmazonCloudWatch",
+    "version": "Legacy"
+   },
+   "on_demand": [
+    {
+     "rateCode": "96K55R2PV3ZZZ3AM.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.50 per GB custom log data ingested in Standard log class - US East (Northern Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.5000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "9DT967X6YQX3AYMB": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Addon shard hour",
+    "groupDescription": "Number of extended shard hours",
+    "usagetype": "Extended-ShardHour",
+    "operation": "shardHourStorage",
+    "maximumExtendedStorage": "7 days",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis",
+    "standardStorageRetentionIncluded": "1 day"
+   },
+   "on_demand": [
+    {
+     "rateCode": "9DT967X6YQX3AYMB.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.020 per extended shard-hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "ShardHour",
+     "pricePerUnit": {
+      "USD": "0.0200000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "9HMQK22ZQCCJWFF6": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data read from Kinesis Streams",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Batch Processing",
+    "usagetype": "USE1-StreamsSourceBilledBytes",
+    "operation": "GetKinesisRecords",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose",
+    "tickettype": "1"
+   },
+   "on_demand": [
+    {
+     "rateCode": "9HMQK22ZQCCJWFF6.JRTCKXETXF.HK3AFRJD7J",
+     "description": "Tier 1 $0.029 per GB of data read from Kinesis Data Streams",
+     "beginRange": "0",
+     "endRange": "512000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0290000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "9HMQK22ZQCCJWFF6.JRTCKXETXF.UWBZ2JUKT9",
+     "description": "Tier 2 $0.025 per GB of data read from Kinesis Data Streams",
+     "beginRange": "512000",
+     "endRange": "2048000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0250000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "9HMQK22ZQCCJWFF6.JRTCKXETXF.PERGK9UASF",
+     "description": "Tier 3 $0.020 per GB of data read from Kinesis Data Streams",
+     "beginRange": "2048000",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0200000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "9QWTRBSJY5J6A9MX": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data ingested or delivered",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Event-by-Event Processing",
+    "usagetype": "USE1-DirectPUT-no-rounding-BilledBytes",
+    "operation": "PutRecord",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose"
+   },
+   "on_demand": [
+    {
+     "rateCode": "9QWTRBSJY5J6A9MX.JRTCKXETXF.6YS6EN2CT7",
+     "description": "Per GB of data ingested or delivered",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0800000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "APZTX99SRBTV9ACQ": {
+   "offer_file": "AmazonKinesisAnalytics.json",
+   "publication_date": "2026-09-11T12:44:44Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisAnalytics/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisAnalytics",
+    "description": "4 GB memory, 1 vCPU compute included in 1 Kinesis Processing Unit (KPU) for Java applications",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "usagetype": "USE1-KPU-Hour-Java",
+    "operation": "StartApplication",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Analytics"
+   },
+   "on_demand": [
+    {
+     "rateCode": "APZTX99SRBTV9ACQ.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.11 per Kinesis Processing Unit-hour for Apache Flink applications",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "KPU-Hour",
+     "pricePerUnit": {
+      "USD": "0.1100000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "B674W3KVY282C9AV": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data ingested in Batch",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Batch Processing",
+    "usagetype": "USE1-BilledBytes",
+    "operation": "PutRecordBatch",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose",
+    "tickettype": "1"
+   },
+   "on_demand": [
+    {
+     "rateCode": "B674W3KVY282C9AV.JRTCKXETXF.HK3AFRJD7J",
+     "description": "Tier 1 $0.029 per GB of data ingested",
+     "beginRange": "0",
+     "endRange": "512000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0290000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "B674W3KVY282C9AV.JRTCKXETXF.UWBZ2JUKT9",
+     "description": "Tier 2 $0.025 per GB of data ingested",
+     "beginRange": "512000",
+     "endRange": "2048000",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0250000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "B674W3KVY282C9AV.JRTCKXETXF.PERGK9UASF",
+     "description": "Tier 3 $0.020 per GB of data ingested",
+     "beginRange": "2048000",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0200000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "B6WHE3FUNCDQVVX4": {
+   "offer_file": "AmazonAthena.json",
+   "publication_date": "2026-09-11T12:44:08Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonAthena/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonAthena",
+    "description": "Charged for total data scanned per query with a minimum 10MB for each successful or cancelled queries",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "usagetype": "USE1-DataScannedInTB",
+    "operation": "",
+    "freeQueryTypes": "Data definition queries (DDL), Failed Queries and statements used to create or load partitions",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Athena"
+   },
+   "on_demand": [
+    {
+     "rateCode": "B6WHE3FUNCDQVVX4.JRTCKXETXF.6YS6EN2CT7",
+     "description": "5.00 USD per Terabytes for DataScannedInTB in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Terabytes",
+     "pricePerUnit": {
+      "USD": "5.0000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "D7V2WMKCCN928FVY": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "per byte hours data is stored",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand Advantage",
+    "usagetype": "Advantage-RetentionByteHrs",
+    "operation": "AdvantageExtRetentionByteHrs",
+    "kinesisAdvantageOperation": "AdvantageExtRetentionByteHrs",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "D7V2WMKCCN928FVY.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.023 per GB-month for Advantage-RetentionByteHrs in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-month",
+     "pricePerUnit": {
+      "USD": "0.0230000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "DEB2KUU84KK4HWZ4": {
+   "offer_file": "AmazonMSK.json",
+   "publication_date": "2026-10-14T17:00:39Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonMSK/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonMSK",
+    "description": "Storage-hours",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Serverless",
+    "usagetype": "USE1-KafkaServerless-StorageHours",
+    "operation": "Serverless",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Managed Streaming for Apache Kafka"
+   },
+   "on_demand": [
+    {
+     "rateCode": "DEB2KUU84KK4HWZ4.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.10 per GB-Mo  for serverless cluster storage in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-Mo",
+     "pricePerUnit": {
+      "USD": "0.1000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "DQYYEZBCWSW5XS2R": {
+   "offer_file": "AmazonVPC.json",
+   "publication_date": "2026-10-16T22:43:21Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonVPC/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonVPC",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "endpointType": "PrivateLink",
+    "group": "VPCE:VpcEndpoint",
+    "groupDescription": "Charge for per GB data processed by VPC Endpoints",
+    "usagetype": "USE1-VpcEndpoint-Bytes",
+    "operation": "VpcEndpoint",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Virtual Private Cloud"
+   },
+   "on_demand": [
+    {
+     "rateCode": "DQYYEZBCWSW5XS2R.JRTCKXETXF.D7RZ6WCPVW",
+     "description": "$0.01 per GB for upto 1 PB monthly data processed by VPC Endpoints",
+     "beginRange": "0",
+     "endRange": "1048576",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0100000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "DQYYEZBCWSW5XS2R.JRTCKXETXF.RBMR72YW69",
+     "description": "$0.006 per GB for more than 1 PB and less than 5 PB monthly data processed by VPC Endpoints",
+     "beginRange": "1048576",
+     "endRange": "5242880",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0060000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "DQYYEZBCWSW5XS2R.JRTCKXETXF.SW9U2ZKBYX",
+     "description": "$0.004 per GB for more than 5 PB monthly data processed by VPC Endpoints",
+     "beginRange": "5242880",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0040000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "E9YHNFENF4XQBZR6": {
+   "offer_file": "AmazonS3.json",
+   "publication_date": "2026-10-15T17:35:40Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonS3",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "S3-API-Tier1",
+    "groupDescription": "PUT/COPY/POST or LIST requests",
+    "usagetype": "Requests-Tier1",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Simple Storage Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "E9YHNFENF4XQBZR6.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.005 per 1,000 PUT, COPY, POST, or LIST requests",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000050000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "ECQFCZZ6DTWE83YB": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Long-term Data Retention GB-month",
+    "groupDescription": "Number of GB-month long-term data storage",
+    "usagetype": "LongTermRetention-ByteHrs",
+    "operation": "LongTermRetentionByteHrs",
+    "maximumExtendedStorage": "365 Days",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis",
+    "standardStorageRetentionIncluded": "1 day"
+   },
+   "on_demand": [
+    {
+     "rateCode": "ECQFCZZ6DTWE83YB.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.023 per GB-month for Long-term data storage (data older than 7 days) in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-month",
+     "pricePerUnit": {
+      "USD": "0.0230000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "EN2N5TATXE673A3B": {
+   "offer_file": "AmazonVPC.json",
+   "publication_date": "2026-10-16T22:43:21Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonVPC/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonVPC",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "endpointType": "PrivateLink",
+    "group": "VPCE:VpcEndpoint",
+    "groupDescription": "Hourly charge for VPC Endpoints",
+    "usagetype": "USE1-VpcEndpoint-Hours",
+    "operation": "VpcEndpoint",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Virtual Private Cloud"
+   },
+   "on_demand": [
+    {
+     "rateCode": "EN2N5TATXE673A3B.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.01 per VPC Endpoint Hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.0100000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "FC2TWT2UEPTBKVBX": {
+   "offer_file": "AmazonApiGateway.json",
+   "publication_date": "2026-10-13T00:30:44Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonApiGateway/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonApiGateway",
+    "description": "HTTP API Requests",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "usagetype": "USE1-ApiGatewayHttpRequest",
+    "operation": "ApiGatewayHttpApi",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon API Gateway"
+   },
+   "on_demand": [
+    {
+     "rateCode": "FC2TWT2UEPTBKVBX.JRTCKXETXF.9NXBCPDZYR",
+     "description": "$1/million requests - API Gateway HTTP API (first 300 million)",
+     "beginRange": "0",
+     "endRange": "300000000",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000010000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "FC2TWT2UEPTBKVBX.JRTCKXETXF.Y5DREYKEMT",
+     "description": "$0.9/million requests - API Gateway HTTP API (more than 300 million)",
+     "beginRange": "300000000",
+     "endRange": "Inf",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000009000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "G2VJ35UVR5JWH4ZJ": {
+   "offer_file": "AmazonMSK.json",
+   "publication_date": "2026-10-14T17:00:39Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonMSK/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonMSK",
+    "description": "Cluster-hours",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Serverless",
+    "usagetype": "USE1-KafkaServerless-ClusterHours",
+    "operation": "Serverless",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Managed Streaming for Apache Kafka"
+   },
+   "on_demand": [
+    {
+     "rateCode": "G2VJ35UVR5JWH4ZJ.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.75 per cluster-hour  for serverless cluster in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.7500000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "GU2ZS9HVP6QTQ7KE": {
+   "offer_file": "AWSLambda.json",
+   "publication_date": "2026-10-22T18:39:59Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AWSLambda",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "AWS-Lambda-Requests",
+    "groupDescription": "Invocation call for a Lambda function",
+    "usagetype": "Request",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "AWS Lambda"
+   },
+   "on_demand": [
+    {
+     "rateCode": "GU2ZS9HVP6QTQ7KE.JRTCKXETXF.6YS6EN2CT7",
+     "description": "AWS Lambda - Total Requests - US East (Northern Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000002000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "HQEH3ZWJVT46JHRG": {
+   "offer_file": "AWSDataTransfer.json",
+   "publication_date": "2026-09-16T13:22:08Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSDataTransfer/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AWSDataTransfer",
+    "transferType": "AWS Outbound",
+    "fromLocation": "US East (N. Virginia)",
+    "fromLocationType": "AWS Region",
+    "toLocation": "External",
+    "toLocationType": "Other",
+    "usagetype": "DataTransfer-Out-Bytes",
+    "operation": "",
+    "fromRegionCode": "us-east-1",
+    "servicename": "AWS Data Transfer",
+    "toRegionCode": ""
+   },
+   "on_demand": [
+    {
+     "rateCode": "HQEH3ZWJVT46JHRG.JRTCKXETXF.Q3Z75P77EN",
+     "description": "$0.090 per GB - first 10 TB / month data transfer out beyond the global free tier",
+     "beginRange": "0",
+     "endRange": "10240",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0900000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "HQEH3ZWJVT46JHRG.JRTCKXETXF.VF6T3GAUKQ",
+     "description": "$0.085 per GB - next 40 TB / month data transfer out",
+     "beginRange": "10240",
+     "endRange": "51200",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0850000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "HQEH3ZWJVT46JHRG.JRTCKXETXF.N9EW5UVVPA",
+     "description": "$0.070 per GB - next 100 TB / month data transfer out",
+     "beginRange": "51200",
+     "endRange": "153600",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0700000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "HQEH3ZWJVT46JHRG.JRTCKXETXF.GPHXDESFBB",
+     "description": "$0.050 per GB - greater than 150 TB / month data transfer out",
+     "beginRange": "153600",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0500000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "HWKSXZUY7UAK8DKC": {
+   "offer_file": "AmazonElastiCache.json",
+   "publication_date": "2026-10-28T19:24:50Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonElastiCache/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonElastiCache",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "cache.r7g.large",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "2",
+    "memory": "13.07 GiB",
+    "networkPerformance": "Up to 12.5 Gigabit",
+    "cacheEngine": "Valkey",
+    "usagetype": "NodeUsage:cache.r7g.large",
+    "operation": "CreateCacheCluster:Valkey",
+    "normalizationSizeFactor": "3.2",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon ElastiCache"
+   },
+   "on_demand": [
+    {
+     "rateCode": "HWKSXZUY7UAK8DKC.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.1752 per Memory optimized r7g.large node hour running Valkey",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.1752000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "J7S7KD4WFDNQWKNX": {
+   "offer_file": "AmazonRDS.json",
+   "publication_date": "2026-10-29T07:06:35Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonRDS/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonRDS",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "storageMedia": "SSD",
+    "volumeType": "General Purpose-GP3",
+    "minVolumeSize": "5 GB",
+    "maxVolumeSize": "16 TB",
+    "engineCode": "14",
+    "databaseEngine": "PostgreSQL",
+    "deploymentOption": "Multi-AZ",
+    "usagetype": "RDS:Multi-AZ-GP3-Storage",
+    "operation": "CreateDBInstance:0014",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Relational Database Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "J7S7KD4WFDNQWKNX.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.23 per GB-month of provisioned GP3 storage for Multi-AZ deployments running PostgreSQL",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-Mo",
+     "pricePerUnit": {
+      "USD": "0.2300000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "JG3KUJMBRGHV3N8G": {
+   "offer_file": "AmazonEC2.json",
+   "publication_date": "2026-10-28T18:03:52Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonEC2",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "storageMedia": "SSD-backed",
+    "volumeType": "General Purpose",
+    "maxVolumeSize": "64 TiB",
+    "maxIopsvolume": "80000",
+    "maxThroughputvolume": "2000 MiB/s",
+    "usagetype": "EBS:VolumeUsage.gp3",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Compute Cloud",
+    "volumeApiName": "gp3"
+   },
+   "on_demand": [
+    {
+     "rateCode": "JG3KUJMBRGHV3N8G.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.08 per GB-month of General Purpose (gp3) provisioned storage - US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-Mo",
+     "pricePerUnit": {
+      "USD": "0.0800000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "K7BX6567RJ67A2KE": {
+   "offer_file": "AWSLambda.json",
+   "publication_date": "2026-10-22T18:39:59Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AWSLambda",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "AWS-Lambda-Requests-ARM",
+    "groupDescription": "Invocation call for a Lambda function for ARM",
+    "usagetype": "Request-ARM",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "AWS Lambda"
+   },
+   "on_demand": [
+    {
+     "rateCode": "K7BX6567RJ67A2KE.JRTCKXETXF.6YS6EN2CT7",
+     "description": "AWS Lambda - Total Requests for ARM - US East (Northern Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000002000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "KG586CTNGQ4VRZKZ": {
+   "offer_file": "AmazonCloudWatch.json",
+   "publication_date": "2026-10-07T11:55:40Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudWatch/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonCloudWatch",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Metric",
+    "groupDescription": "CloudWatch Custom Metrics",
+    "usagetype": "CW:MetricMonitorUsage",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "AmazonCloudWatch"
+   },
+   "on_demand": [
+    {
+     "rateCode": "KG586CTNGQ4VRZKZ.JRTCKXETXF.A6VD9GXV7W",
+     "description": "$0.30 per metric-month for the first 10,000 metrics - US East (Northern Virginia)",
+     "beginRange": "0",
+     "endRange": "10000",
+     "unit": "Metrics",
+     "pricePerUnit": {
+      "USD": "0.3000000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "KG586CTNGQ4VRZKZ.JRTCKXETXF.FG3KHZ79QN",
+     "description": "$0.10 per metric-month for the next 240,000 metrics - US East (Northern Virginia)",
+     "beginRange": "10000",
+     "endRange": "250000",
+     "unit": "Metrics",
+     "pricePerUnit": {
+      "USD": "0.1000000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "KG586CTNGQ4VRZKZ.JRTCKXETXF.95SDKRWVHH",
+     "description": "$0.05 per metric-month for the next 750,000 metrics - US East (Northern Virginia)",
+     "beginRange": "250000",
+     "endRange": "1000000",
+     "unit": "Metrics",
+     "pricePerUnit": {
+      "USD": "0.0500000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "KG586CTNGQ4VRZKZ.JRTCKXETXF.VNJQCFJPS4",
+     "description": "$0.02 per metric-month  for over 1,000,000 metrics - US East (Northern Virginia)",
+     "beginRange": "1000000",
+     "endRange": "Inf",
+     "unit": "Metrics",
+     "pricePerUnit": {
+      "USD": "0.0200000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "KKDZ3TFSXUSMCZ3A": {
+   "offer_file": "AmazonApiGateway.json",
+   "publication_date": "2026-10-13T00:30:44Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonApiGateway/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonApiGateway",
+    "description": "API calls received",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "usagetype": "USE1-ApiGatewayRequest",
+    "operation": "ApiGatewayRequest",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon API Gateway"
+   },
+   "on_demand": [
+    {
+     "rateCode": "KKDZ3TFSXUSMCZ3A.JRTCKXETXF.QS4VQ8N7FD",
+     "description": "$3.50/million requests - first 333 million requests/month",
+     "beginRange": "0",
+     "endRange": "333000000",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000035000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "KKDZ3TFSXUSMCZ3A.JRTCKXETXF.DRE2JBTXBV",
+     "description": "$2.80/million requests - next 667 million requests/month",
+     "beginRange": "333000000",
+     "endRange": "1000000000",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000028000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "KKDZ3TFSXUSMCZ3A.JRTCKXETXF.J4SY3H5SUC",
+     "description": "$2.38/million requests - next 19 billion requests/month",
+     "beginRange": "1000000000",
+     "endRange": "20000000000",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000023800"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "KKDZ3TFSXUSMCZ3A.JRTCKXETXF.KVC36CKCEW",
+     "description": "$1.51/million requests - over 20 billion requests/month",
+     "beginRange": "20000000000",
+     "endRange": "Inf",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000015100"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "MAFXKQJ2YAQM6UDY": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Payload Units",
+    "groupDescription": "Number of payload units generated by producers",
+    "usagetype": "PutRequestPayloadUnits",
+    "operation": "PutRequest",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "MAFXKQJ2YAQM6UDY.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.014 per 1 million payload units",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "PutRequest",
+     "pricePerUnit": {
+      "USD": "0.0000000140"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "MHBWEUY8DCMVQ66Y": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of data format conversion",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Batch format conversion",
+    "usagetype": "USE1-DFCBilledBytes",
+    "operation": "DataFormatConversion",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose",
+    "tickettype": "1"
+   },
+   "on_demand": [
+    {
+     "rateCode": "MHBWEUY8DCMVQ66Y.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.018 per GB of data format conversion",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0180000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "MWNGNHD8QDQRAGKN": {
+   "offer_file": "AmazonElastiCache.json",
+   "publication_date": "2026-10-28T19:24:50Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonElastiCache/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonElastiCache",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "cache.r7g.large",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "2",
+    "memory": "13.07 GiB",
+    "networkPerformance": "Up to 12.5 Gigabit",
+    "cacheEngine": "Redis",
+    "usagetype": "NodeUsage:cache.r7g.large",
+    "operation": "CreateCacheCluster:0002",
+    "normalizationSizeFactor": "4",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon ElastiCache"
+   },
+   "on_demand": [
+    {
+     "rateCode": "MWNGNHD8QDQRAGKN.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.219 per Memory optimized r7g.large node hour running Redis",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.2190000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "NR4E2TGDUNJZTB8H": {
+   "offer_file": "AmazonMSK.json",
+   "publication_date": "2026-10-14T17:00:39Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonMSK/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonMSK",
+    "description": "Broker-hours",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "vcpu": "2",
+    "group": "Broker",
+    "usagetype": "USE1-Kafka.m7g.large",
+    "operation": "RunBroker",
+    "computeFamily": "m7g.large",
+    "memoryGib": "8",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Managed Streaming for Apache Kafka"
+   },
+   "on_demand": [
+    {
+     "rateCode": "NR4E2TGDUNJZTB8H.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.204 per broker hour for Kafka.m7g.large in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.2040000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "P2XGEJ8N3KU52WA8": {
+   "offer_file": "AWSELB.json",
+   "publication_date": "2026-09-11T12:45:44Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSELB/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AWSELB",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "ELB:Balancing",
+    "groupDescription": "Used Application Load Balancer capacity units-hr",
+    "usagetype": "LCUUsage",
+    "operation": "LoadBalancing:Application",
+    "regionCode": "us-east-1",
+    "servicename": "Elastic Load Balancing"
+   },
+   "on_demand": [
+    {
+     "rateCode": "P2XGEJ8N3KU52WA8.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.008 per used Application load balancer capacity unit-hour (or partial hour)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "LCU-Hrs",
+     "pricePerUnit": {
+      "USD": "0.0080000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "PBZNQUSEXZUC34C9": {
+   "offer_file": "AmazonECS.json",
+   "publication_date": "2026-10-19T22:43:17Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonECS/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonECS",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "tenancy": "Shared",
+    "usagetype": "USE1-Fargate-GB-Hours",
+    "operation": "",
+    "memorytype": "perGB",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Container Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "PBZNQUSEXZUC34C9.JRTCKXETXF.6YS6EN2CT7",
+     "description": "AWS Fargate - Memory  - US East (N.Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.0044450000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "PNHYMNK9TM59MTU8": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "Per GB of data retrieved using GetRecords consumers",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand",
+    "usagetype": "OnDemand-BilledOutgoingBytes",
+    "operation": "OnDemandDataRetrieval",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "PNHYMNK9TM59MTU8.JRTCKXETXF.6YS6EN2CT7",
+     "description": "0.04 per GB of data read using GetRecords Consumer",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0400000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "PYHN6K7E6KP5TYPE": {
+   "offer_file": "AmazonElastiCache.json",
+   "publication_date": "2026-10-28T19:24:50Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonElastiCache/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonElastiCache",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "cache.r7g.xlarge",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "4",
+    "memory": "26.32 GiB",
+    "networkPerformance": "Up to 12.5 Gigabit",
+    "cacheEngine": "Valkey",
+    "usagetype": "NodeUsage:cache.r7g.xlarge",
+    "operation": "CreateCacheCluster:Valkey",
+    "normalizationSizeFactor": "6.4",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon ElastiCache"
+   },
+   "on_demand": [
+    {
+     "rateCode": "PYHN6K7E6KP5TYPE.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.3496 per Memory optimized r7g.xlarge node hour running Valkey",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.3496000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "QFHADPJ42UJZ4EUK": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Enhanced fan-out consumer-shard hour",
+    "groupDescription": "Number of enhanced fan-out consumer-shard hours generated by consumers",
+    "usagetype": "EnhancedFanoutHour",
+    "operation": "ConsumerHour",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "QFHADPJ42UJZ4EUK.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.015 per enhanced fan-out consumer-shard hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "ConsumerShardHour",
+     "pricePerUnit": {
+      "USD": "0.0150000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "QMV5SYWWFEXRC3WW": {
+   "offer_file": "AmazonElastiCache.json",
+   "publication_date": "2026-10-28T19:24:50Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonElastiCache/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonElastiCache",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "cache.r7g.xlarge",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "4",
+    "memory": "26.32 GiB",
+    "networkPerformance": "Up to 12.5 Gigabit",
+    "cacheEngine": "Redis",
+    "usagetype": "NodeUsage:cache.r7g.xlarge",
+    "operation": "CreateCacheCluster:0002",
+    "normalizationSizeFactor": "8",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon ElastiCache"
+   },
+   "on_demand": [
+    {
+     "rateCode": "QMV5SYWWFEXRC3WW.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.437 per Memory optimized r7g.xlarge node hour running Redis",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.4370000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "QPKXCKEKNV5DW3QA": {
+   "offer_file": "AmazonRDS.json",
+   "publication_date": "2026-10-29T07:06:35Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonRDS/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonRDS",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "db.r7g.large",
+    "currentGeneration": "Yes",
+    "instanceFamily": "Memory optimized",
+    "vcpu": "2",
+    "physicalProcessor": "AWS Graviton3",
+    "memory": "16 GiB",
+    "storage": "EBS Only",
+    "networkPerformance": "Up to 12.5 Gigabit",
+    "processorArchitecture": "64-bit",
+    "engineCode": "14",
+    "databaseEngine": "PostgreSQL",
+    "licenseModel": "No license required",
+    "deploymentOption": "Multi-AZ",
+    "usagetype": "Multi-AZUsage:db.r7g.large",
+    "operation": "CreateDBInstance:0014",
+    "instanceTypeFamily": "R7G",
+    "normalizationSizeFactor": "8",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Relational Database Service",
+    "unbundledLicensing": "FALSE"
+   },
+   "on_demand": [
+    {
+     "rateCode": "QPKXCKEKNV5DW3QA.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$ 0.478 per RDS db.r7g.large Multi-AZ instance hour (or partial hour) running PostgreSQL",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.4780000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "S69RFKAH58MYJ6TF": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "per stream hour",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand",
+    "usagetype": "OnDemand-StreamHour",
+    "operation": "OnDemandStreamHr",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "S69RFKAH58MYJ6TF.JRTCKXETXF.6YS6EN2CT7",
+     "description": "0.04 per Stream Hour Used",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "StreamHr",
+     "pricePerUnit": {
+      "USD": "0.0400000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "S8QGXX5R2BKKMDSJ": {
+   "offer_file": "AmazonCloudWatch.json",
+   "publication_date": "2026-10-07T11:55:40Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonCloudWatch/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonCloudWatch",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Ingested Logs",
+    "groupDescription": "Existing system, application, and custom log files",
+    "usagetype": "USE1-DataProcessing-Bytes",
+    "operation": "PutLogEvents",
+    "logsDestination": "Amazon CloudWatch Logs",
+    "regionCode": "us-east-1",
+    "servicename": "AmazonCloudWatch",
+    "version": "Current"
+   },
+   "on_demand": [
+    {
+     "rateCode": "S8QGXX5R2BKKMDSJ.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.50 per GB custom log data ingested in Standard log class - US East (Northern Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.5000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "SQUFRQX4K92S4SBB": {
+   "offer_file": "AmazonEC2.json",
+   "publication_date": "2026-10-28T18:03:52Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonEC2",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "provisioned": "Yes",
+    "group": "EBS Throughput",
+    "groupDescription": "Charge per Provisioned mbps",
+    "usagetype": "EBS:VolumeP-Throughput.gp3",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Compute Cloud",
+    "volumeApiName": "gp3"
+   },
+   "on_demand": [
+    {
+     "rateCode": "SQUFRQX4K92S4SBB.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.04 per provisioned MiBps-month of gp3 - US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GiBps-mo",
+     "pricePerUnit": {
+      "USD": "40.9600000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "TG3M4CAGBA3NYQBH": {
+   "offer_file": "AWSLambda.json",
+   "publication_date": "2026-10-22T18:39:59Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AWSLambda/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AWSLambda",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "AWS-Lambda-Duration",
+    "groupDescription": "Invocation duration weighted by memory assigned to function, measured in GB-s",
+    "usagetype": "Lambda-GB-Second",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "AWS Lambda"
+   },
+   "on_demand": [
+    {
+     "rateCode": "TG3M4CAGBA3NYQBH.JRTCKXETXF.CUKFZ388N3",
+     "description": "AWS Lambda - Total Compute - US East (Northern Virginia)-Tier-1",
+     "beginRange": "0",
+     "endRange": "6000000000",
+     "unit": "Lambda-GB-Second",
+     "pricePerUnit": {
+      "USD": "0.0000166667"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "TG3M4CAGBA3NYQBH.JRTCKXETXF.QZE2SB4KVB",
+     "description": "AWS Lambda - Total Compute - US East (Northern Virginia)-Tier-2",
+     "beginRange": "6000000000",
+     "endRange": "15000000000",
+     "unit": "Lambda-GB-Second",
+     "pricePerUnit": {
+      "USD": "0.0000150000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "TG3M4CAGBA3NYQBH.JRTCKXETXF.V7R92EXG27",
+     "description": "AWS Lambda - Total Compute - US East (Northern Virginia)-Tier-3",
+     "beginRange": "15000000000",
+     "endRange": "Inf",
+     "unit": "Lambda-GB-Second",
+     "pricePerUnit": {
+      "USD": "0.0000133334"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "UNH9KPQP7W7C66C9": {
+   "offer_file": "AmazonECS.json",
+   "publication_date": "2026-10-19T22:43:17Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonECS/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonECS",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "tenancy": "Shared",
+    "usagetype": "USE1-Fargate-ARM-GB-Hours",
+    "operation": "",
+    "cpuArchitecture": "ARM",
+    "memorytype": "perGB",
+    "regionCode": "us-east-1",
+    "resource": "per GB per hour",
+    "servicename": "Amazon Elastic Container Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "UNH9KPQP7W7C66C9.JRTCKXETXF.6YS6EN2CT7",
+     "description": "AWS Fargate - ARM - Memory - US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.0035600000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "V5CG23U23V2SY36D": {
+   "offer_file": "AmazonMSK.json",
+   "publication_date": "2026-10-14T17:00:39Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonMSK/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonMSK",
+    "description": "Partition-hours",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Serverless",
+    "usagetype": "USE1-KafkaServerless-PartitionHours",
+    "operation": "Serverless",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Managed Streaming for Apache Kafka"
+   },
+   "on_demand": [
+    {
+     "rateCode": "V5CG23U23V2SY36D.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.0015 per partition-hour  for serverless cluster in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.0015000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "V6GPW77PCCJVB3HT": {
+   "offer_file": "AmazonKinesisAnalytics.json",
+   "publication_date": "2026-09-11T12:44:44Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisAnalytics/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisAnalytics",
+    "description": "Per GB-month of running application storage",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "usagetype": "USE1-RunningApplicationStorage",
+    "operation": "StartApplication",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Analytics"
+   },
+   "on_demand": [
+    {
+     "rateCode": "V6GPW77PCCJVB3HT.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.10 per GB-month of running application storage",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-month",
+     "pricePerUnit": {
+      "USD": "0.1000000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "W4XJUPQGUU49C47X": {
+   "offer_file": "AmazonKinesisAnalytics.json",
+   "publication_date": "2026-09-11T12:44:44Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisAnalytics/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisAnalytics",
+    "description": "Per GB-month of durable application backups",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "usagetype": "USE1-DurableApplicationBackups",
+    "operation": "CreateSnapshot",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Analytics"
+   },
+   "on_demand": [
+    {
+     "rateCode": "W4XJUPQGUU49C47X.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.023 per GB-month of durable application backups",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB-month",
+     "pricePerUnit": {
+      "USD": "0.0230000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "WBB3WSH3G5E5NK3F": {
+   "offer_file": "AmazonKinesisFirehose.json",
+   "publication_date": "2026-09-11T12:44:46Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesisFirehose/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesisFirehose",
+    "description": "Per GB of dynamically partitioned data delivered",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Dynamic Partitioning",
+    "usagetype": "USE1-DPBytesDelivered",
+    "operation": "DynamicPartitioning",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis Firehose",
+    "tickettype": "1"
+   },
+   "on_demand": [
+    {
+     "rateCode": "WBB3WSH3G5E5NK3F.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.02 per GB of data processed through dynamic partitioning",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0200000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "WP9ANXZGBYYSGJEA": {
+   "offer_file": "AmazonS3.json",
+   "publication_date": "2026-10-15T17:35:40Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonS3",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "availability": "99.99%",
+    "storageClass": "General Purpose",
+    "volumeType": "Standard",
+    "usagetype": "TimedStorage-ByteHrs",
+    "operation": "",
+    "durability": "99.999999999%",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Simple Storage Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "WP9ANXZGBYYSGJEA.JRTCKXETXF.PGHJ3S3EYE",
+     "description": "$0.023 per GB - first 50 TB / month of storage used",
+     "beginRange": "0",
+     "endRange": "51200",
+     "unit": "GB-Mo",
+     "pricePerUnit": {
+      "USD": "0.0230000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "WP9ANXZGBYYSGJEA.JRTCKXETXF.D42MF2PVJS",
+     "description": "$0.022 per GB - next 450 TB / month of storage used",
+     "beginRange": "51200",
+     "endRange": "512000",
+     "unit": "GB-Mo",
+     "pricePerUnit": {
+      "USD": "0.0220000000"
+     },
+     "appliesTo": []
+    },
+    {
+     "rateCode": "WP9ANXZGBYYSGJEA.JRTCKXETXF.PXJDJ3YRG3",
+     "description": "$0.021 per GB - storage used / month over 500 TB",
+     "beginRange": "512000",
+     "endRange": "Inf",
+     "unit": "GB-Mo",
+     "pricePerUnit": {
+      "USD": "0.0210000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "XSZATS4VYMDC9CYN": {
+   "offer_file": "AmazonECS.json",
+   "publication_date": "2026-10-19T22:43:17Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonECS/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonECS",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "tenancy": "Shared",
+    "usagetype": "USE1-Fargate-ARM-vCPU-Hours:perCPU",
+    "operation": "",
+    "cpuArchitecture": "ARM",
+    "cputype": "perCPU",
+    "regionCode": "us-east-1",
+    "resource": "per vCPU per hour",
+    "servicename": "Amazon Elastic Container Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "XSZATS4VYMDC9CYN.JRTCKXETXF.6YS6EN2CT7",
+     "description": "AWS Fargate - ARM - vCPU - US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "hours",
+     "pricePerUnit": {
+      "USD": "0.0323800000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "Y7X6HJY9G859NU23": {
+   "offer_file": "AmazonEC2.json",
+   "publication_date": "2026-10-28T18:03:52Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonEC2",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "instanceType": "m7g.xlarge",
+    "currentGeneration": "Yes",
+    "instanceFamily": "General purpose",
+    "vcpu": "4",
+    "physicalProcessor": "AWS Graviton3 Processor",
+    "clockSpeed": "2.5 GHz",
+    "memory": "16 GiB",
+    "storage": "EBS only",
+    "networkPerformance": "Up to 12500 Megabit",
+    "processorArchitecture": "64-bit",
+    "tenancy": "Shared",
+    "operatingSystem": "Linux",
+    "licenseModel": "No License required",
+    "usagetype": "BoxUsage:m7g.xlarge",
+    "operation": "RunInstances",
+    "availabilityzone": "NA",
+    "capacitystatus": "Used",
+    "classicnetworkingsupport": "false",
+    "dedicatedEbsThroughput": "Up to 10000 Mbps",
+    "dedicatedEbsThroughputDescription": "1250 Mbps",
+    "ecu": "NA",
+    "enhancedNetworkingSupported": "Yes",
+    "gpuMemory": "NA",
+    "instanceFamilyCategory": "General Purpose",
+    "intelAvxAvailable": "No",
+    "intelAvx2Available": "No",
+    "intelTurboAvailable": "No",
+    "marketoption": "OnDemand",
+    "normalizationSizeFactor": "8",
+    "preInstalledSw": "NA",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Elastic Compute Cloud",
+    "vpcnetworkingsupport": "true"
+   },
+   "on_demand": [
+    {
+     "rateCode": "Y7X6HJY9G859NU23.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.1632 per On Demand Linux m7g.xlarge Instance Hour",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Hrs",
+     "pricePerUnit": {
+      "USD": "0.1632000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "YDRUFCJ9QK7K9MK5": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "Per GB of data ingested",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand Advantage",
+    "usagetype": "Advantage-BilledIncomingBytes",
+    "operation": "AdvantageDataIngested",
+    "kinesisAdvantageOperation": "AdvantageDataIngested",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "YDRUFCJ9QK7K9MK5.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.032 per GB for Advantage-BilledIncomingBytes in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0320000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "YENE958B9VU4WT5G": {
+   "offer_file": "AmazonKinesis.json",
+   "publication_date": "2026-09-11T12:44:43Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonKinesis/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonKinesis",
+    "description": "Per GB of data retrieved",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "OnDemand Advantage",
+    "usagetype": "Advantage-BilledOutgoingBytes",
+    "operation": "AdvantageDataRetrieval",
+    "kinesisAdvantageOperation": "AdvantageDataRetrieval",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Kinesis"
+   },
+   "on_demand": [
+    {
+     "rateCode": "YENE958B9VU4WT5G.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.016 per GB for Advantage-BilledOutgoingBytes in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0160000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "YGFEYSTDCSQQADE7": {
+   "offer_file": "AmazonMSK.json",
+   "publication_date": "2026-10-14T17:00:39Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonMSK/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonMSK",
+    "description": "Per-GB data egressed",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "Serverless",
+    "usagetype": "USE1-KafkaServerless-Out-Bytes",
+    "operation": "Serverless",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Managed Streaming for Apache Kafka"
+   },
+   "on_demand": [
+    {
+     "rateCode": "YGFEYSTDCSQQADE7.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.05 per GB  data out for serverless cluster in US East (N. Virginia)",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "GB",
+     "pricePerUnit": {
+      "USD": "0.0500000000"
+     },
+     "appliesTo": []
+    }
+   ]
+  },
+  "ZWQ6Q48CRJXX4FXE": {
+   "offer_file": "AmazonS3.json",
+   "publication_date": "2026-10-15T17:35:40Z",
+   "source_url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json",
+   "attributes": {
+    "servicecode": "AmazonS3",
+    "location": "US East (N. Virginia)",
+    "locationType": "AWS Region",
+    "group": "S3-API-Tier2",
+    "groupDescription": "GET and all other requests",
+    "usagetype": "Requests-Tier2",
+    "operation": "",
+    "regionCode": "us-east-1",
+    "servicename": "Amazon Simple Storage Service"
+   },
+   "on_demand": [
+    {
+     "rateCode": "ZWQ6Q48CRJXX4FXE.JRTCKXETXF.6YS6EN2CT7",
+     "description": "$0.004 per 10,000 GET and all other requests",
+     "beginRange": "0",
+     "endRange": "Inf",
+     "unit": "Requests",
+     "pricePerUnit": {
+      "USD": "0.0000004000"
+     },
+     "appliesTo": []
+    }
+   ]
+  }
+ },
+ "not_found": []
+}
